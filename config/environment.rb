@@ -15,6 +15,10 @@ require 'pg'
 require 'active_record'
 require 'logger'
 
+require 'bcrypt'
+require 'pry'
+require 'pry-nav'
+
 require 'sinatra'
 require "sinatra/reloader" if development?
 
