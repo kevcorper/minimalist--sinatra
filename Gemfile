@@ -17,6 +17,8 @@ gem 'bcrypt'
 gem 'pry'
 gem 'pry-nav'
 
+gem 'rtask-db-drop-connections', '~> 1.0'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'

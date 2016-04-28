@@ -65,6 +65,8 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.2.0)
     rspec-support (3.2.0)
+    rtask-db-drop-connections (1.0.5)
+      pg (~> 0.18.0)
     shotgun (0.9)
       rack (>= 1.0)
     shoulda-matchers (2.8.0)
@@ -104,6 +106,7 @@ DEPENDENCIES
   rack-test
   rake
   rspec (~> 3.0)
+  rtask-db-drop-connections (~> 1.0)
   shotgun
   shoulda-matchers
   sinatra

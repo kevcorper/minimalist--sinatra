@@ -18,6 +18,29 @@
   <title></title>
 </head>
 <body>
-  <%= yield %>
+  <header>
+    <a id="main-title" href="/snippets">minima<span class="gray">list</span></a>
+    <nav id="user-nav">
+      <% if false %>
+        <a href="#">username</a>
+        <a href="#">logout</a>
+      <% else %>
+      <a href="#">register</a>
+      <a href="#">login</a>
+      <% end %>
+    </nav>
+  </header>
+  <nav id="main-nav">
+    <a href="/snippets/list">lists</a>
+    <a href="/snippets/list">forms</a>
+    <a href="/snippets/list">buttons</a>
+    <a href="/snippets/list">containers</a>
+    <a href="/snippets/list">javascript</a>
+    <a href="/snippets/list">fonts</a>
+    <a href="/snippets/list">navbars</a>
+    <a href="/snippets/list">layouts</a>
+    <a href="/snippets/list">about</a>
+  </nav>
+    <%= yield %>
 </body>
 </html>
