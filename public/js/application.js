@@ -1,7 +1,29 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+	$("#add-form").click(function(event) {
+		event.preventDefault();
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+		$target = $(event.target)
+
+		$('#snippet-form').slideToggle()
+		if ($target.text() == 'Nevermind') {
+			$target.text('Add a Restaurant')
+			$target.css('background-color', 'lightgray')
+			$target.css('color', 'white')}
+		else {
+			$target.text('Nevermind')
+			$target.css('background-color', 'white')
+			$target.css('color', 'gray')}
+	});
+
+	// $('#snippet-form').submit(function(event) {
+	// 	event.preventDefault();
+
+	// 	$target = $(event.target)
+
+	// 	$.ajax({url: $target.attr('action'), type: $target.attr('method'), data: $target.serialize()})
+	// 		.done(function(response) {
+	// 			$('.restaurants-all').prepend(response)
+	// 			$('#add-rest-form').find('input[type=text]').val('')
+	// 	});
+	// });
 });

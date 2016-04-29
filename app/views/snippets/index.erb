@@ -1,0 +1,10 @@
+<h2 class="quote">"simple snippets for clean design"</h2>
+
+<a id="add-form" class="create-button" href="/snippets/new">Create a Snippet</a>
+<%= erb :'snippets/_new', layout: false %>
+
+<div id="snippet-blurb-all">
+	<% Snippet.all.each do |snippet| %>
+		<%= erb :'snippets/_snippet-blurb', layout: false, locals: {snippet: snippet} %>
+	<% end %>
+</div>
