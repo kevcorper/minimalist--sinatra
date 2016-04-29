@@ -1,0 +1,10 @@
+<a id="add-form;" class="create-button" href="/snippets/new">Create a Snippet</a>
+<%= erb :'snippets/_new', layout: false %>
+
+<% snippets = Snippet.all.select{|snippet| snippet.category == @category} %>
+
+<div id="snippet-blurb-all">
+	<% snippets.each do |snippet| %>
+		<%= erb :'snippets/_snippet-blurb', layout: false, locals: {snippet: snippet} %>
+	<% end %>
+</div>

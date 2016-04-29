@@ -11,36 +11,39 @@
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
+  <link rel="stylesheet" href="/css/animate.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
+
 
   <title></title>
 </head>
 <body>
   <header>
-    <a id="main-title" href="/snippets">minima<span class="gray">list</span></a>
+    <a id="main-title" href="/snippets"><span class="black">minim<span class="small">&#916;</span></span>list<!--<span class="small">+</span> --></a>
     <nav id="user-nav">
       <% if false %>
-        <a href="#">username</a>
+        <a href="#">username</a> | 
         <a href="#">logout</a>
       <% else %>
-      <a href="#">register</a>
+      <a href="#">register</a> |
       <a href="#">login</a>
       <% end %>
     </nav>
   </header>
   <nav id="main-nav">
-    <a href="/snippets/list">lists</a>
-    <a href="/snippets/list">forms</a>
-    <a href="/snippets/list">buttons</a>
-    <a href="/snippets/list">containers</a>
-    <a href="/snippets/list">javascript</a>
-    <a href="/snippets/list">fonts</a>
-    <a href="/snippets/list">navbars</a>
-    <a href="/snippets/list">layouts</a>
-    <a href="/snippets/list">about</a>
+    <a href="/snippets/cat/container">containers</a>
+    <a href="/snippets/cat/navbar">navbars</a>
+    <a href="/snippets/cat/form">forms</a>
+    <a href="/snippets/cat/button">buttons</a>
+    <a href="/snippets/cat/list">lists</a>
+    <a href="/snippets/cat/layout">layouts</a>
+    <a href="/snippets/cat/font">fonts</a>
+    <a href="/snippets/cat/javascript">colors</a>
+    <a href="/about">about</a>
   </nav>
     <%= yield %>
 </body>
+<footer>Copyright ⓒ2016 | Kevin Perkins
 </html>
